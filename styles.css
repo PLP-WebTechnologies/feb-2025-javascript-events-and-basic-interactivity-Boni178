@@ -1,0 +1,257 @@
+/* sets the smooth scroll behavior  */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px; 
+    line-height: 1.6;
+    color: #333;
+}
+/* sets the text clour for the whole page*/
+h1, h2, h3,p { 
+    color: #333;
+    
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+/* Logo styles */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Navigation links styles */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation list item styles */
+.nav-links li {
+    display: inline;
+}
+/* Navigation links styles */
+.nav-links a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+/* Navigation links hover effect */
+.nav-links a:hover {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+}
+/* Button styles */
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Button hover effect*/
+button:hover {
+    background-color: #2980b9;
+}
+/* Home Section */
+#home {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+}
+
+/* Tabs Layout */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    padding: 10px;
+    border: none;
+    background: #f4f4f4;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tab-link.active {
+    background: #3498db;
+    color: white;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc; 
+    padding: 10px;
+    border-radius: 5px;
+    width: 120%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tab-content.active {
+    display: block;
+}
+#italian {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+  
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#italian h2 {
+    color: #333;
+}
+
+#italian ul, #italian ol {
+    margin-left: 20px;
+}
+
+#italian li {
+    margin-bottom: 10px;
+}
+
+#desserts {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+   
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#desserts h2 {
+    color: #333;
+}
+
+#desserts ul, #desserts ol {
+    margin-left: 20px;
+}
+
+#desserts li {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Image Gallery Hover Effect */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-auto-rows: 150px;
+    gap: 16px; 
+   
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Image Gallery styles  */
+.gallery img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+/* Image Gallery Hover Effect */
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* form styling  */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 15px;
+    border: 1px solid #ccc; 
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* labels styling  */
+label {
+    font-weight: bold;
+    color: #333;
+}
+/* Input field styles*/
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+/* button styles  */
+button {
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+/* Hover Effect for subscription form*/
+button:hover {
+    transform: translateY(-2px);
+    background-color: #2980b9;
+}
+/* email feedback */
+.feedback {
+    color: red;
+    font-size: 12px;
+}
